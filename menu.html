@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        background: url('lokali.jpg') no-repeat center center fixed;
+        background-size: cover;
+        padding: 20px;
+        color: #fff; 
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu-item a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+  <big><h1 style="text-align: center; margin-bottom: 30px; color:yellow;">Menu:</h1></big> 
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="salad.jpg" alt="salad">
+            <a href="#">Salad</a>
+        </div>
+        <div class="menu-item">
+            <img src="patate.jpg" alt="patato">
+            <a href="#">Patato</a>
+        </div>
+        <div class="menu-item">
+            <img src="pasta.jpg" alt="pasta">
+            <a href="#">Pasta</a>
+        </div>
+        <div class="menu-item">
+            <img src="rice.jpg" alt="rice with sea food">
+            <a href="#">Rice with sea food</a>
+        </div>
+        <div class="menu-item">
+            <img src="beef.jpg" alt="beef">
+            <a href="#">Beef</a>
+        </div>
+        <div class="menu-item">
+            <img src="chicken.jpg" alt="chicken">
+            <a href="#">Chicken</a>
+        </div>
+        <div class="menu-item">
+            <img src="fish.jpg" alt="fish">
+            <a href="#">Fish</a>
+        </div>
+    </div>
+</body>
+</html>

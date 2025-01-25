@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('lokali.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.reservation-container {
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.reservation-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+
+.reservation-form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #555;
+  font-weight: bold;
+}
+
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="reservation-container">
+    <h1>Reservation</h1>
+    <form class="reservation-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="date">Reservation Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Reservation Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" placeholder="Enter number of guests" required>
+
+      <label for="table">Table Preference:</label>
+      <select id="table" name="table">
+        <option value="indoor">Indoor</option>
+        <option value="outdoor">Outdoor</option>
+        
+      </select>
+
+      <button type="submit" class="submit-btn">Reserve Now</button>
+    </form>
+  </div>
+</body>
+</html>
